@@ -73,6 +73,10 @@ app.post("/addproduct", async (req, res) => {
 app.get("/", (req, res) => {
   res.send("running");
 });
+
+app.get('/dextra',(req,res)=>{
+  res.send("dextra..!");
+});
 const storage = multer.diskStorage({
   destination: "./upload/images",
   filename: (req, file, cb) => {
